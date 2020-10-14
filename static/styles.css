@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body, html {
+    height: 100%;
+    font-family: 'PT Sans', sans-serif;
+    background: white;
+    color: white;
+
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+    margin-left: 40px;
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+#main {
+    background: #A52F30;
+    margin-left: auto; /* Same as the width of the sidebar */
+    margin-top: -10px;
+    padding: 0px 10px;
+    color: white;
+    font-size: 25px;
+    margin: auto;
+   /* text-align: center; */
+}

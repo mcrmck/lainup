@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<h1>Hello {{name}} Here are your results!</h1>
+<h2>You Got Bill Gates!</h2>
+<p>
+    You are really good at code, but that's not what makes you special. After using coding to become very succesful, you never forget your roots and always give back to others.
+    Keep up the compassion and thank you for putting others above yourself!
+</p>
+<img src="{{url_for('static', filename='images/gates.jpg')}}">
+
+{% endblock %}

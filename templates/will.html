@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<h1>Hello {{lineupRec}} Here are your results!</h1>
+<h2>You Got Will McCormack!</h2>
+<p>
+    You don't have time for the nonsense of front end development. Rather your favorite applications are more real-world oriented in robotics.
+    You may not have the best syntax or expansive knowledge of languages, but your ideas and problem solving are unparalleled.
+    Make sure to bring fun to code and never think too hard!
+
+</p>
+<img src="{{url_for('static', filename='images/will.jpg')}}">
+
+{% endblock %}

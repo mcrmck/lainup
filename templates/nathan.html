@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<h1>Hello {{name}} Here are your results!</h1>
+<h2>You Got Jason Chung!</h2>
+<p>
+    You are a STEM nerd, but your really good at it.
+    You apply your coding skills to the science fields you love (robtics, physics, etc.)
+    While you may not be good at teaching others your ways, once someone gets to know you, they really come to appreciate your coding ability.
+</p>
+<img src="{{url_for('static', filename='images/nathan.jpg')}}">
+
+{% endblock %}

@@ -1,0 +1,14 @@
+1901.01 Bob Joe Steve Will Craig Max Dan Tim Jeremy  
+1912.16 Bob Joe Steve Will Craig Max Jeremy Tim Dan  
+1947.29 Bob Joe Steve Will Craig Dan Max Tim Jeremy  
+1995.59 Bob Joe Steve Will Craig Tim Max Jeremy Dan  
+2101.74 Bob Joe Steve Will Craig Jeremy Max Tim Dan  
+2118.78 Bob Joe Steve Craig Will Jeremy Max Tim Dan  
+2131.33 Bob Joe Craig Steve Will Jeremy Max Tim Dan  
+2158.63 Bob Joe Craig Will Steve Jeremy Max Tim Dan  
+2163.31 Bob Jeremy Craig Will Joe Steve Max Tim Dan  
+2167.73 Joe Jeremy Craig Will Steve Bob Max Tim Dan  
+2169.25 Will Jeremy Joe Craig Steve Bob Max Tim Dan  
+2169.5 Will Jeremy Craig Joe Steve Bob Max Tim Dan  
+2172.68 Jeremy Joe Craig Will Bob Steve Max Tim Dan  
+2186.31 Jeremy Joe Craig Will Steve Bob Max Tim Dan  

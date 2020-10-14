@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<h1>Hello {{name}} Here are your results!</h1>
+<h2>You Got David Malan!</h2>
+<p>
+    You have chosen to give back to the coding world through teaching others. Your tremendous compassion combined with impressive coding ability creates a unique formula that inspires so many.
+    You are well versed in coding but still retain a fun, laid back aura!
+    However, your jokes are a little cliché (we know this is CS50).
+</p>
+<img src="{{url_for('static', filename='images/malan.jpg')}}">
+
+{% endblock %}

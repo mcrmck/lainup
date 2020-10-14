@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<h1>Hello {{name}} Here are your results!</h1>
+<h2>You Got Rob Pitkin!</h2>
+<p>
+   You probably take an online class at your school. You can hardly be bothered to pay attention during CS50 because your always doing your other compsci homework.
+   Also, you are probably normally caught in all black and listening to some music.
+   On god tho, ur coding skills are probably pretty good.
+</p>
+<img src="{{url_for('static', filename='images/rob.jpg')}}">
+
+{% endblock %}
