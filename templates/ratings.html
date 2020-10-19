@@ -1,0 +1,181 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<form action="{{ url_for('stats') }}" method="POST">
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p1Name">Player 1</label>
+      <input type="text" name="p1Name" id="p1Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p1Hitting" id="p1Hitting" placeholder="Hitting (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p1Power" id="p1Power" placeholder="Power (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p1Walks" id="p1Walks" placeholder="On-Base (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p1Speed" id="p1Speed" placeholder="Speed (0-99)" min="0" >
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p2Name">Player 2</label>
+      <input type="text" name="p2Name" id="p2Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p2Hitting" id="p2Hitting" placeholder="Hitting (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p2Power" id="p2Power" placeholder="Power (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p2Walks" id="p2Walks" placeholder="On-Base (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p2Speed" id="p2Speed" placeholder="Speed (0-99)" min="0" >
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p3Name">Player 3</label>
+      <input type="text" name="p3Name" id="p3Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p3Hitting" id="p3Hitting" placeholder="Hitting (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p3Power" id="p3Power" placeholder="Power (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p3Walks" id="p3Walks" placeholder="On-Base (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p3Speed" id="p3Speed" placeholder="Speed (0-99)" min="0" >
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p4Name">Player 4</label>
+      <input type="text" name="p4Name" id="p4Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p4Hitting" id="p4Hitting" placeholder="Hitting (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p4Power" id="p4Power" placeholder="Power (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p4Walks" id="p4Walks" placeholder="On-Base (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p4Speed" id="p4Speed" placeholder="Speed (0-99)" min="0" >
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p5Name">Player 5</label>
+      <input type="text" name="p5Name" id="p5Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p5Hitting" id="p5Hitting" placeholder="Hitting (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p5Power" id="p5Power" placeholder="Power (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p5Walks" id="p5Walks" placeholder="On-Base (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p5Speed" id="p5Speed" placeholder="Speed (0-99)" min="0" >
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p6Name">Player 6</label>
+      <input type="text" name="p6Name" id="p6Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p6Hitting" id="p6Hitting" placeholder="Hitting (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p6Power" id="p6Power" placeholder="Power (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p6Walks" id="p6Walks" placeholder="On-Base (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p6Speed" id="p6Speed" placeholder="Speed (0-99)" min="0" >
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p7Name">Player 7</label>
+      <input type="text" name="p7Name" id="p7Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p7Hitting" id="p7Hitting" placeholder="Hitting (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p7Power" id="p7Power" placeholder="Power (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p7Walks" id="p7Walks" placeholder="On-Base (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p7Speed" id="p7Speed" placeholder="Speed (0-99)" min="0" >
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p8Name">Player 8</label>
+      <input type="text" name="p8Name" id="p8Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p8Hitting" id="p8Hitting" placeholder="Hitting (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p8Power" id="p8Power" placeholder="Power (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p8Walks" id="p8Walks" placeholder="On-Base (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p8Speed" id="p8Speed" placeholder="Speed (0-99)" min="0" >
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p9Name">Player 9</label>
+      <input type="text" name="p9Name" id="p9Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p9Hitting" id="p9Hitting" placeholder="Hitting (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p9Power" id="p9Power" placeholder="Power (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p9Walks" id="p9Walks" placeholder="On-Base (0-99)" min="0" >
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p9Speed" id="p9Speed" placeholder="Speed (0-99)" min="0" >
+    </div>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Get my LAINUP</button>
+</form>
+
+{% endblock %}

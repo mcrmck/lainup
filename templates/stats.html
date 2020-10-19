@@ -1,0 +1,237 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<form action="{{ url_for('stats') }}" method="POST">
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p1Name">Player 1</label>
+      <input type="text" name="p1Name" id="p1Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p1PA" id="p1PA" placeholder="Plate Appearances" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p1H" id="p1H" placeholder="Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p1XBH" id="p1XBH" placeholder="Extra-Base Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p1W" id="p1W" placeholder="Walks" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p1SB" id="p1SB" placeholder="Stolen Bases" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p1CS" id="p1CS" placeholder="Caught Stealing" min="0">
+    </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p2Name">Player 2</label>
+      <input type="text" name="p2Name" id="p2Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p2PA" id="p2PA" placeholder="Plate Appearances" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p2H" id="p2H" placeholder="Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p2XBH" id="p2XBH" placeholder="Extra-Base Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p2W" id="p2W" placeholder="Walks" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p2SB" id="p2SB" placeholder="Stolen Bases" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p2CS" id="p2CS" placeholder="Caught Stealing" min="0">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p3Name">Player 3</label>
+      <input type="text" name="p3Name" id="p3Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p3PA" id="p3PA" placeholder="Plate Appearances" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p3H" id="p3H" placeholder="Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p3XBH" id="p3XBH" placeholder="Extra-Base Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p3W" id="p3W" placeholder="Walks" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p3SB" id="p3SB" placeholder="Stolen Bases" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p3CS" id="p3CS" placeholder="Caught Stealing" min="0">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p4Name">Player 4</label>
+      <input type="text" name="p4Name" id="p4Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p4PA" id="p4PA" placeholder="Plate Appearances" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p4H" id="p4H" placeholder="Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p4XBH" id="p4XBH" placeholder="Extra-Base Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p4W" id="p4W" placeholder="Walks" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p4SB" id="p4SB" placeholder="Stolen Bases" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p4CS" id="p4CS" placeholder="Caught Stealing" min="0">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p5Name">Player 5</label>
+      <input type="text" name="p5Name" id="p5Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p5PA" id="p5PA" placeholder="Plate Appearances" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p5H" id="p5H" placeholder="Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p5XBH" id="p5XBH" placeholder="Extra-Base Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p5W" id="p5W" placeholder="Walks" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p5SB" id="p5SB" placeholder="Stolen Bases" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p5CS" id="p5CS" placeholder="Caught Stealing" min="0">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p6Name">Player 6</label>
+      <input type="text" name="p6Name" id="p6Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p6PA" id="p6PA" placeholder="Plate Appearances" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p6H" id="p6H" placeholder="Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p6XBH" id="p6XBH" placeholder="Extra-Base Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p6W" id="p6W" placeholder="Walks" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p6SB" id="p6SB" placeholder="Stolen Bases" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p6CS" id="p6CS" placeholder="Caught Stealing" min="0">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p7Name">Player 7</label>
+      <input type="text" name="p7Name" id="p7Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p7PA" id="p7PA" placeholder="Plate Appearances" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p7H" id="p7H" placeholder="Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p7XBH" id="p7XBH" placeholder="Extra-Base Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p7W" id="p7W" placeholder="Walks" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p7SB" id="p7SB" placeholder="Stolen Bases" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p7CS" id="p7CS" placeholder="Caught Stealing" min="0">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p8Name">Player 8</label>
+      <input type="text" name="p8Name" id="p8Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p8PA" id="p8PA" placeholder="Plate Appearances" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p8H" id="p8H" placeholder="Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p8XBH" id="p8XBH" placeholder="Extra-Base Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p8W" id="p8W" placeholder="Walks" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p8SB" id="p8SB" placeholder="Stolen Bases" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p8CS" id="p8CS" placeholder="Caught Stealing" min="0">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="p9Name">Player 9</label>
+      <input type="text" name="p9Name" id="p9Name" placeholder="Name">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p9PA" id="p9PA" placeholder="Plate Appearances" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p9H" id="p9H" placeholder="Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p9XBH" id="p9XBH" placeholder="Extra-Base Hits" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p9W" id="p9W" placeholder="Walks" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p9SB" id="p9SB" placeholder="Stolen Bases" min="0">
+    </div>
+    <div class="form-group col-auto">
+      <input type="number" name="p9CS" id="p9CS" placeholder="Caught Stealing" min="0">
+    </div>
+  </div>
+
+
+
+  <button type="submit" class="btn btn-primary">Get my LAINUP</button>
+</form>
+
+{% endblock %}
