@@ -249,5 +249,5 @@ def stats():
     print(lineupRec)
     return render_template("results.html")
 
-
-
+if __name__ == '__main__':
+    app.run()
