@@ -1,1 +1,1 @@
-web: gunicorn application:lainup
+web: gunicorn application:application
