@@ -1,12 +1,9 @@
 {% extends "layout.html" %}
 
 {% block main %}
-<h1>Hello {{lineupRec}} Here are your results!</h1>
-<h2>You Got Will McCormack!</h2>
-<p>
-
-    {{lineupRec}}
-
-</p>
+<h1>Your LAINUP is:</h1>
+    {% for batter in hiLineup %}
+        <p>{{batter}}</p>
+    {% endfor %}
 
 {% endblock %}

@@ -103,25 +103,24 @@ def ratings():
     # pcs.extend((1, 0, 2, 2, 1, 0, 0, 2, 0))
 
 
-    output = open("newlineups.txt", "w")
     combos = list(permutations(range(9), 9))
     hirpg = 0
-    lineupRec = ""
+    hiLineup = ""
     for p in combos:
         rpg = 0
-        lineup = ""
+        lineup = []
         for i in range(9):
             rpg += (hx[i] * ph[p[i]]) + (wx[i] * pw[p[i]]) + (xbx[i] * pxb[p[i]]) + (sbx[i] * psb[p[i]]) + (csx[i] * pcs[p[i]])
-            lineup += pn[p[i]]
-            lineup += " "
+            batter = str(i+1) + ". " + pn[p[i]]
+            lineup.append(batter)
             modrpg = 1.00*(int(rpg * 16200)/100)
         if modrpg > hirpg:
             hirpg = modrpg
-            lineupRec = str(modrpg) + " " + lineup + " \n"
-            output.write(str(modrpg) + " " + lineup + " \n")
+            hiLineup = lineup
 
-    print(lineupRec)
-    return render_template("results.html")
+    print(lineup)
+    return render_template("results.html", hiLineup = hiLineup)
+
 
 @app.route("/stats", methods=["GET","POST"])
 def stats():
@@ -229,25 +228,23 @@ def stats():
     # pcs.extend((1, 0, 2, 2, 1, 0, 0, 2, 0))
 
 
-    output = open("newlineups.txt", "w")
     combos = list(permutations(range(9), 9))
     hirpg = 0
-    lineupRec = ""
+    hiLineup = ""
     for p in combos:
         rpg = 0
-        lineup = ""
+        lineup = []
         for i in range(9):
             rpg += (hx[i] * ph[p[i]]) + (wx[i] * pw[p[i]]) + (xbx[i] * pxb[p[i]]) + (sbx[i] * psb[p[i]]) + (csx[i] * pcs[p[i]])
-            lineup += pn[p[i]]
-            lineup += " "
+            batter = str(i+1) + ". " + pn[p[i]]
+            lineup.append(batter)
             modrpg = 1.00*(int(rpg * 16200)/100)
         if modrpg > hirpg:
             hirpg = modrpg
-            lineupRec = str(modrpg) + " " + lineup + " \n"
-            output.write(str(modrpg) + " " + lineup + " \n")
+            hiLineup = lineup
 
-    print(lineupRec)
-    return render_template("results.html")
+    print(lineup)
+    return render_template("results.html", hiLineup = hiLineup)
 
 if __name__ == '__main__':
     app.run()
